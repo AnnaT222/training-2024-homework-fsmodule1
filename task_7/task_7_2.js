@@ -8,18 +8,7 @@ async function copyDirContent(copied, newDir) {
   try {
     await fs.mkdir(newDir, { recursive: true });
 
-    const files = await fs.readdir(copied, { withFileTypes: true });
-
-    for (const file of files) {
-      const copiedPath = path.join(copied, file.name);
-      const newDirPath = path.join(newDir, file.name);
-
-      if (file.isDirectory()) {
-        await copyDirContent(copiedPath, newDirPath);
-      } else {
-        await fs.cp(copiedPath, newDirPath);
-      }
-    }
+    await fs.cp(copied, newDir, { recursive: true });
   } catch (err) {
     console.error(err);
   }
