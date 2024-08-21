@@ -4,7 +4,7 @@ const path = require("node:path");
 const filePath = path.join(__dirname, "file.txt");
 async function changePermissions(filePath) {
   try {
-    await fs.chmod(filePath, 0o400);
+    await fs.chmod(filePath, fs.constants.O_RDONLY);
     const newStats = await fs.stat(filePath);
     console.log(newStats);
   } catch (err) {
