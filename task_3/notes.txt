@@ -1,0 +1,3 @@
+1 difference -> synchronous code can block very easily if it'd be a big size file, but in case of asynchronous way we don't have any problems like that.
+2 difference -> synchronous code is writing in a simple way, but asynchronous one isn't that simple
+So we can say that sinchronous methods are good for simple operations while asynchronouse methods are better suited for complex ones.
