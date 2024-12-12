@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York",
+    "timestamp": "2024-08-21T20:42:53.014Z"
+  },
+  {
+    "name": "Bob",
+    "age": 30,
+    "city": "Los Angeles",
+    "timestamp": "2024-08-21T20:42:53.014Z"
+  },
+  {
+    "name": "Charlie",
+    "age": 28,
+    "city": "Chicago",
+    "timestamp": "2024-08-21T20:42:53.014Z"
+  }
+]
